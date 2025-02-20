@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  background: #333;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  z-index: 10;
+}
+
+.show-modal-container {
+  visibility: visible;
+}
