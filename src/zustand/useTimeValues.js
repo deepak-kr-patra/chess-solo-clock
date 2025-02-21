@@ -5,6 +5,8 @@ const useTimeValues = create((set) => ({
     setInputTime: (inputTime) => set({ inputTime }),
     inputIncrement: 30 * 1000,
     setInputIncrement: (inputIncrement) => set({ inputIncrement }),
+    isRunning: false,
+    setIsRunning: (isRunning) => set({ isRunning }),
 }));
 
 export default useTimeValues;

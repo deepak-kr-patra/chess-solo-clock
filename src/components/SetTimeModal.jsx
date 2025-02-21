@@ -25,7 +25,7 @@ const SetTimeModal = ({ setTime, setIncrement, toggleSetTimeModal }) => {
 
     return (
         <div className='modal-container' id='set-time-modal-container'>
-            <div className="w-[90%] h-1/2 flex flex-col p-4 rounded-2xl bg-[#F4F5F7]">
+            <div className="w-[90%] max-w-96 h-1/2 flex flex-col p-4 rounded-2xl bg-[#F4F5F7]">
                 <h3 className="font-bold text-lg max-sm:text-[16px]">Set Time</h3>
                 <div className='mt-4 w-full flex flex-col justify-center items-center gap-4'>
                     <div className='w-full flex justify-between items-center'>

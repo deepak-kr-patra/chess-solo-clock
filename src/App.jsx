@@ -18,6 +18,12 @@ function App() {
     setTimeModal.classList.contains('show-modal-container') ? setTimeModal.classList.remove('show-modal-container') : setTimeModal.classList.add('show-modal-container');
   };
 
+  const toggleResetTimeModal = () => {
+    const resetTimeModal = document.getElementById('reset-time-modal-container');
+
+    resetTimeModal.classList.contains('show-modal-container') ? resetTimeModal.classList.remove('show-modal-container') : resetTimeModal.classList.add('show-modal-container');
+  };
+
   const addIncrementTime = () => {
     if (time <= 0) {
       return;
@@ -34,6 +40,7 @@ function App() {
           setTime={setTime}
           setIncrement={setIncrement}
           toggleSetTimeModal={toggleSetTimeModal}
+          toggleResetTimeModal={toggleResetTimeModal}
         />
         <h2
           className='h-auto w-full grow text-white text-5xl flex items-center justify-center cursor-pointer'
